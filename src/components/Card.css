@@ -1,0 +1,29 @@
+.card {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 6em;
+    border: solid;
+    border-color: rebeccapurple;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card img {
+    width: auto;
+    height: 4em;
+}
+
+.card h2 {
+    color: blueviolet;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.card h3 {
+    color: brown;
+    
+}

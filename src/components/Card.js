@@ -1,5 +1,5 @@
 import "./Card.css";
-import coco from '../images/coconut.png'
+import coco from '../assets/images/coconut.png'
 
 export default function Card() {
     return (

@@ -1,28 +1,25 @@
 import { useState } from 'react';
 import './Off.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 import Hamb from '../assets/images/hamburger.png';
+import { COffcanvas, COffcanvasBody, COffcanvasHeader, COffcanvasTitle } from '@coreui/react';
 
 export default function Off() {
 
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [visible, setVisible] = useState(false)
 
     return (
         <>
-            <img id='Hamb' src={Hamb} variant="primary" onClick={handleShow}/>
-            <Offcanvas show={show} onHide={handleClose}>
-                <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>OffCanvas</Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                    <a>Cosa 1</a>
-                    <a>Cosa 2</a>
-                </Offcanvas.Body>
-            </Offcanvas>
+            <img id='Hamb' src={Hamb} onClick={() => setVisible(true)} />
+            <COffcanvas placement='start' visible={visible} onHide={() => setVisible(false)}>
+                <COffcanvasHeader>
+                    <COffcanvasTitle>
+                    <img id='Hamb' src={Hamb} onClick={() => setVisible(false)} />
+                    </COffcanvasTitle>
+                </COffcanvasHeader>
+                <COffcanvasBody>
+                    
+                </COffcanvasBody>
+            </COffcanvas>
         </>
     );
 

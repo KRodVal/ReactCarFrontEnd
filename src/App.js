@@ -5,17 +5,16 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import BrandsList from './pages/BrandsList';
+import '@coreui/coreui/dist/css/coreui.min.css'
+import Brands from './pages/Brands';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='*' element={<Home/>} />
-        <Route path='/brands' element={<BrandsList/>} />
+        {/* <Route path='*' element={<Home/>} /> */}
+        <Route path='/*' element={<Brands/>} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;

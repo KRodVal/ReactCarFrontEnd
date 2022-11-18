@@ -1,29 +1,22 @@
-.card {
-    margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
-    height: 6em;
-    border: solid;
-    border-color: rebeccapurple;
-    border-radius: 2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.logo {
     align-items: center;
 }
 
-.card img {
-    width: auto;
-    height: 4em;
+.logo img {
+    width: 4em;
 }
 
-.card h2 {
+.brand {
     color: blueviolet;
-    margin-left: 1em;
-    margin-right: 1em;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2em;
 }
 
-.card h3 {
-    color: brown;
-    
+.model {
+    color: #BA324F;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5em;
+
 }

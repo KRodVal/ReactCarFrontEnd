@@ -1,12 +1,17 @@
 import "./Card.css";
 import coco from '../assets/images/coconut.png'
+import { CCol, CContainer, CRow } from "@coreui/react";
 
 export default function Card() {
     return (
-        <div className="card">
-            <img src={coco} alt="coco"/>
-            <h2>Brand</h2>
-            <h3>Model</h3>
-        </div>
+        <CContainer>
+            <CRow className="align-items-center">
+                <CCol xs={3} className="logo">
+                    <img src={coco} alt="coco" />
+                </CCol>
+                <CCol xs={4} className="brand">Marca</CCol>
+                <CCol className="model">Modelo</CCol>
+            </CRow>
+        </CContainer>
     );
 }

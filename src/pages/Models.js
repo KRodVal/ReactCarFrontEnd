@@ -1,15 +1,14 @@
 import { CHeader } from '@coreui/react';
-import BrandsList from '../components/BrandsList';
+import ModelsList from '../components/ModelsList';
 import Off from '../components/Off';
-// import models from 'http://localhost:3000/models';
 
 
-export default function Brands() {
+export default function Models() {
     return (
         <>
             <CHeader className='headerxd'></CHeader>
             <Off></Off>
-            <BrandsList />
+            <ModelsList />
         </>
 
     );

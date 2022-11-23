@@ -23,7 +23,6 @@ const BrandsList = () => {
         BrandDataService.getAll()
             .then(response => {
                 setBrands(response.data);
-                console.log(response.data);
             })
             .catch(e => {
                 console.log(e);
@@ -66,20 +65,21 @@ const BrandsList = () => {
     return (
         <>
             <div className="col-md-6">
-                <h4>Tutorials List</h4>
+                <h4 className="title">Brands</h4>
 
                 {brands &&
                     brands.map((brand, index) => (
-                        <CContainer>
+                        <CContainer className="CardContainer">
                             <CRow className="align-items-center">
                                 <CCol xs={3} className="logo">
-                                    <img src={coco} alt="coco" />
+                                    <img src={brand} alt="coco" />
                                 </CCol>
                                 <CCol xs={4} className="brand">{brand.brand_name}</CCol>
                                 <CCol className="model">{brand.country}</CCol>
                             </CRow>
                         </CContainer>
-                    ))}
+                    ))
+                }
             </div>
         </>
     );

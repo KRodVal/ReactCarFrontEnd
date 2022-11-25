@@ -8,6 +8,10 @@ const get = id => {
     return http.get('/brands/${id}');
 };
 
+const getImage = id => {
+    return http.get('/brands/${id}/logo');
+};
+
 const create = data => {
     return http.post("/brands", data);
 };
@@ -31,6 +35,7 @@ const findByName = nm => {
 const BrandService = {
     getAll,
     get,
+    getImage,
     create,
     update,
     remove,

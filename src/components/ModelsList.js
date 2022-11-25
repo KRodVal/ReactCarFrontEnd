@@ -87,15 +87,14 @@ const ModelsList = () => {
 
                 {
                     models.map((model, index) => {
-                        // brand = brands.find();
                         return (
                             <CContainer className="CardContainer">
                                 <CRow className="align-items-center">
                                     <CCol xs={3} className="logo">
-                                        <img src={coco} alt="coco" />
+                                        <img src={model.brand.logo_attachment.record_type} alt="coco" />
                                     </CCol>
-                                    <CCol xs={5} className="model">{model.model_nm}</CCol>
-                                    <CCol className="brand">{model.brand_id}</CCol>
+                                    <CCol xs={5} className="models">{model.model_nm}</CCol>
+                                    <CCol className="brands">{model.brand.brand_name}</CCol>
                                 </CRow>
                             </CContainer>
                         );

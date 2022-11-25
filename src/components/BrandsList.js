@@ -6,18 +6,11 @@ import { CCol, CContainer, CRow } from "@coreui/react";
 
 const BrandsList = () => {
     const [brands, setBrands] = useState([]);
-    const [currentBrand, setCurrentBrand] = useState(null);
-    const [currentIndex, setCurrentIndex] = useState(-1);
-    const [searchName, setSearchName] = useState("");
+    let logo;
 
     useEffect(() => {
         retrieveBrands();
     }, []);
-
-    // const onChangeSearchTitle = e => {
-    //     const searchName = e.target.value;
-    //     setSearchName(searchName);
-    // };
 
     const retrieveBrands = () => {
         BrandDataService.getAll()
@@ -31,54 +24,25 @@ const BrandsList = () => {
 
     const refreshList = () => {
         retrieveBrands();
-        setCurrentBrand(null);
-        setCurrentIndex(-1);
     };
-
-    const setActiveBrand = (brand, index) => {
-        setCurrentBrand(brand);
-        setCurrentIndex(index);
-    };
-
-    // const removeAllBrands = () => {
-    //     BrandDataService.removeAll()
-    //         .then(response => {
-    //             console.log(response.data);
-    //             refreshList();
-    //         })
-    //         .catch(e => {
-    //             console.log(e);
-    //         });
-    // };
-
-    // const findByName = () => {
-    //     BrandDataService.findByName(searchName)
-    //         .then(response => {
-    //             setBrands(response.data);
-    //             console.log(response.data);
-    //         })
-    //         .catch(e => {
-    //             console.log(e);
-    //         });
-    // };
 
     return (
         <>
-            <div className="col-md-6">
+            <div className="col-12">
                 <h4 className="title">Brands</h4>
-
                 {brands &&
-                    brands.map((brand, index) => (
-                        <CContainer className="CardContainer">
-                            <CRow className="align-items-center">
-                                <CCol xs={3} className="logo">
-                                    <img src={brand} alt="coco" />
-                                </CCol>
-                                <CCol xs={4} className="brand">{brand.brand_name}</CCol>
-                                <CCol className="model">{brand.country}</CCol>
-                            </CRow>
-                        </CContainer>
-                    ))
+                    brands.map((brand) => {
+                        console.log(brand.logo_attachment);
+                        return (<CContainer className="CardContainer">
+                        <CRow className="align-items-center">
+                            <CCol xs={3} className="logo">
+                                <img src={"localhost:3000/brands/1/logo"} alt="coco" />
+                            </CCol>
+                            <CCol xs={4} className="brands">{brand.brand_name}</CCol>
+                            <CCol className="models">{brand.country}</CCol>
+                        </CRow>
+                    </CContainer>)
+                    })
                 }
             </div>
         </>

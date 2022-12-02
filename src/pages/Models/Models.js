@@ -1,6 +1,6 @@
 import { CHeader } from '@coreui/react';
-import ModelsList from '../components/ModelsList';
-import Off from '../components/Off';
+import ModelsList from '../../components/ModelsList/ModelsList';
+import Off from '../../components/OffCanvas/Off';
 
 
 export default function Models() {

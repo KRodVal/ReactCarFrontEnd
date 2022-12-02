@@ -1,4 +1,4 @@
-import SignupForm from '../components/SignupForm.js';
+import SignupForm from '../../components/SignupForm/SignupForm.js';
 import { CHeader } from '@coreui/react';
 
 export default function Signup() {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './BrandsList.css';
-import BrandDataService from '../services/BrandService';
-import coco from '../assets/images/coconut.png'
+import BrandDataService from '../../services/BrandService';
+import coco from '../../assets/images/coconut.png'
 import { CCol, CContainer, CRow } from "@coreui/react";
 
 const BrandsList = () => {

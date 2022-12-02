@@ -1,5 +1,5 @@
 import { CHeader } from '@coreui/react';
-import LoginForm from '../components/LoginForm';
+import LoginForm from '../../components/LoginForm/LoginForm';
 
 export default function Login() {
     return (

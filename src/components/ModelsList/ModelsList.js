@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import './ModelsList.css';
-import ModelDataService from '../services/ModelService';
-import BrandDataService from '../services/BrandService';
-import coco from '../assets/images/coconut.png'
+import ModelDataService from '../../services/ModelService';
+import BrandDataService from '../../services/BrandService';
+import coco from '../../assets/images/coconut.png'
 import { CCol, CContainer, CRow } from "@coreui/react";
 
 const ModelsList = () => {

@@ -18,7 +18,7 @@ const SignupForm = () => {
                 </div>
                 <div id='buttons'>
                     <input type="submit" value="Register"/>
-                    <input type="reset" value="Clear"/>
+                    <input type="file" value="Clear"/>
                 </div>
             </form>
         </div>

@@ -2,9 +2,10 @@ import { useState } from 'react';
 import './Off.css';
 import Hamb from '../assets/images/hamburger.png';
 import Hambright from '../assets/images/hambright.png';
+import coco from '../assets/images/coconut.png';
 import { CContainer, COffcanvas, COffcanvasBody, COffcanvasHeader, COffcanvasTitle } from '@coreui/react';
 
-export default function Off() {
+const Off = () => {
 
     const [visible, setVisible] = useState(false)
 
@@ -32,3 +33,5 @@ export default function Off() {
     );
 
 }
+
+export default Off;

@@ -1,5 +1,7 @@
 @import '@coreui/coreui/dist/css/coreui.min.css';
 
+/* General classes */
+
 .App {
   text-align: center;
 }
@@ -18,3 +20,10 @@ body {
   font-size:xx-large;
 }
 
+.forms {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

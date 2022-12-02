@@ -26,3 +26,7 @@
     text-decoration: none;
     text-transform: capitalize;
 }
+
+.offtext a:hover {
+    text-decoration:underline #CCE6F4;
+}

@@ -86,7 +86,7 @@ const ModelsList = () => {
                 <h4 className="title">Models</h4>
 
                 {
-                    models.map((model, index) => {
+                    models.map((model) => {
                         return (
                             <CContainer className="CardContainer">
                                 <CRow className="align-items-center">

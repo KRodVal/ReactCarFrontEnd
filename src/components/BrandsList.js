@@ -30,18 +30,21 @@ const BrandsList = () => {
         <>
             <div className="col-12">
                 <h4 className="title">Brands</h4>
+
                 {brands &&
                     brands.map((brand) => {
                         console.log(brand.logo_attachment);
-                        return (<CContainer className="CardContainer">
-                        <CRow className="align-items-center">
-                            <CCol xs={3} className="logo">
-                                <img src={"localhost:3000/brands/1/logo"} alt="coco" />
-                            </CCol>
-                            <CCol xs={4} className="brands">{brand.brand_name}</CCol>
-                            <CCol className="models">{brand.country}</CCol>
-                        </CRow>
-                    </CContainer>)
+                        return (
+                            <CContainer className="CardContainer">
+                                <CRow className="align-items-center">
+                                    <CCol xs={3} className="logo">
+                                        <img src={"localhost:3000/brands/1/logo"} alt="coco" />
+                                    </CCol>
+                                    <CCol xs={4} className="brands">{brand.brand_name}</CCol>
+                                    <CCol className="models">{brand.country}</CCol>
+                                </CRow>
+                            </CContainer>
+                        )
                     })
                 }
             </div>

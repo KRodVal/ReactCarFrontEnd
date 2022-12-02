@@ -6,6 +6,12 @@
     width: 4em;
 }
 
+#refresh {
+    float: right;
+    width: 5em;
+    height: auto;
+}
+
 .brands {
     color: #175676;
     text-transform: capitalize;
@@ -24,4 +30,9 @@
 .CardContainer {
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.CardContainer:hover {
+    border: solid #175676;
+    border-radius: 1em;
 }

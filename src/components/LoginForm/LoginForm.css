@@ -21,6 +21,7 @@
 
 .formlogin div input {
     background-color: transparent;
+    height: 2em;
     border-radius: .5em;
     border-color: #175676;
     text-align: center;

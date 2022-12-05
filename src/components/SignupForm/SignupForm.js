@@ -1,24 +1,43 @@
 import './SignupForm.css';
+import UserDataService from '../../services/UserService';
+
+const doSignup = (event) => {
+    event.preventDefault();
+
+    const params = {
+        username: event.target.username.value,
+        password: event.target.password.value,
+        age: event.target.age.value
+    }
+
+    UserDataService.signup(params)
+    .then(() => {
+        window.location = "/brands"
+    })
+    .catch(e => {
+        console.log(e)
+    })
+}
 
 const SignupForm = () => {
     return (
         <div className='forms'>
-            <form className='formsignup'>
+            <form className='formlogin' onSubmit={doSignup} method="POST">
                 <div>
                     <label>Username</label>
-                    <input type="text" placeholder="Username" autofocus/>
+                    <input name="username" type="text" placeholder="Username" autoFocus/>
                 </div>
                 <div>
                     <label>Password</label>
-                    <input type="password"  placeholder="Password"/>
+                    <input name="password" type="password"  placeholder="Password"/>
                 </div>
                 <div>
                     <label>Age</label>
-                    <input type="number" min="18" max="120"/>
+                    <input name="age" type="number" min="18" max="120"/>
                 </div>
                 <div id='buttons'>
-                    <input type="submit" value="Register"/>
-                    <input type="file" value="Clear"/>
+                    <input type="submit" value="Log In"/>
+                    <input type="reset" value="Clear"/>
                 </div>
             </form>
         </div>

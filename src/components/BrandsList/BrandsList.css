@@ -12,6 +12,12 @@
     height: auto;
 }
 
+#trash {
+    float: right;
+    width: 2em;
+    height: auto;
+}
+
 .brands {
     color: #175676;
     text-transform: capitalize;

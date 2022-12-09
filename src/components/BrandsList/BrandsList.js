@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import './BrandsList.css';
 import BrandDataService from '../../services/BrandService';
 import { CCol, CContainer, CRow } from "@coreui/react";
+import coco from '../../assets/images/coconut.png';
+import trash from '../../assets/images/trash.png';
 
 const BrandsList = () => {
     const [brands, setBrands] = useState([]);
@@ -14,6 +16,7 @@ const BrandsList = () => {
         BrandDataService.getAll()
             .then(response => {
                 setBrands(response.data);
+                console.log(response)
             })
             .catch(e => {
                 console.log(e);
@@ -33,7 +36,10 @@ const BrandsList = () => {
                                     <img src={brand.logo} alt="coco" />
                                 </CCol>
                                 <CCol xs={4} className="brands">{brand.brand_name}</CCol>
-                                <CCol className="models">{brand.country}</CCol>
+                                <CCol xs={3} className="models">{brand.country}</CCol>
+                                <CCol xs={2} className="delete" onClick={() => BrandDataService.remove(brand.id)}>
+                                    <img id="trash" src={trash} alt="delete"/>
+                                </CCol>
                             </CRow>
                         </CContainer>
                     )

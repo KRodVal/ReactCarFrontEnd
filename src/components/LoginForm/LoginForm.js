@@ -1,24 +1,27 @@
 import './LoginForm.css';
 import UserDataService from '../../services/UserService';
 
-const doLogin = (event) => {
-    event.preventDefault();
-    const params = {
-        username: event.target.username.value,
-        password: event.target.password.value
-    }
-
-    UserDataService.login(params)
-    .then(response => {
-        window.localStorage.setItem('token', response.data.token)
-        window.location = "/brands"
-    })
-    .catch(e => {
-        console.log(e)
-    })
-}
-
 const LoginForm = () => {
+
+    //
+    const doLogin = (event) => {
+        event.preventDefault();
+        const params = {
+            username: event.target.username.value,
+            password: event.target.password.value
+        }
+    
+        UserDataService.login(params)
+        .then(response => {
+            window.localStorage.setItem('token', response.data.token)
+            window.location = "/brands"
+        })
+        .catch(e => {
+            console.log(e)
+        })
+    }
+    //
+
     return (
         <div className='forms'>
             <form className='formlogin' onSubmit={doLogin} method="POST">

@@ -1,3 +1,11 @@
+.forms h1 {
+    font-size:xx-large;
+    color: #175676;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
 .formlogin {
     display: flex;
     align-items: center;

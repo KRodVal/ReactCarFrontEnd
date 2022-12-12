@@ -22,10 +22,11 @@ const BrandForm = () => {
         BrandDataService.create(params)
             .then(() => {
                 console.log("yes")
-            })
-            .catch(e => {
+            }).catch(e => {
                 console.log(e)
             })
+
+        window.location('/brands')
     }
 
     return (

@@ -34,8 +34,24 @@ const create = params => {
     return axios(config);
 };
 
-const update = (id, data) => {
-    return http.put(`/brands/${id}`);
+const update = (id, params) => {
+
+    var data = new FormData();
+    data.append('brand_name', params.brand_name);
+    data.append('country', params.country);
+    
+
+    var config = {
+        method: 'patch',
+        url: `http://localhost:3000/brands/${id}`,
+        headers: {
+            'Content-Type': 'multipart/form-data',
+            'Authorization' : "bearer " + localStorage.getItem("token")
+        },
+        data: data
+    };
+
+    return axios(config);
 };
 
 const remove = id => {

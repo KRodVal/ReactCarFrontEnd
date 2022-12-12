@@ -11,8 +11,7 @@ import Models from './pages/Models/Models';
 import NewModel from './pages/Models/NewModel';
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
-
-import OneBrand from './pages/Brands/OneBrand';
+import Brand from './pages/Brands/Brand';
 
 export default function App() {
 
@@ -25,7 +24,7 @@ export default function App() {
         <Route path='/signup' element={<Signup/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/brands' element={<Brands/>} />
-        <Route path='/brands/:id' element={<OneBrand/>} />
+        <Route path='/brands/:id' element={<Brand/>} />
         <Route path='/brands/new' element={<NewBrand/>}/>
         <Route path='/models' element={<Models/>}/>
         <Route path='/models/new' element={<NewModel/>}/>

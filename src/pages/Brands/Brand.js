@@ -3,12 +3,12 @@ import { CHeader } from '@coreui/react';
 import Off from '../../components/OffCanvas/Off';
 import coco from '../../assets/images/coconut.png';
 import BrandDataService from '../../services/BrandService';
-import {
-    useParams
-} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
 
 export default function OneBrand() {
+
+    const logged = localStorage.getItem('role');
     let { id } = useParams();
     const [brand, setBrand] = useState({});
     console.log(brand)
@@ -38,62 +38,66 @@ export default function OneBrand() {
     }
 
     return (
+
         <>
-            <CHeader className='headerxd'></CHeader>
-            <Off></Off>
+            {logged ? (
+                <>
+                    <CHeader className='headerxd'></CHeader>
+                    <Off></Off>
 
-            {brand.id ? (
+                    {brand.id ? (
 
-                <div className='forms'>
-                    <form className='formlogin' onSubmit={doEdit} method="PATCH">
-                        <div>
-                            <h1>{brand.brand_name}</h1>
-                        </div>
+                        <div className='forms'>
+                            <form className='formlogin' onSubmit={doEdit} method="PATCH">
+                                <div>
+                                    <h1>{brand.brand_name}</h1>
+                                </div>
 
-                        <div>
-                            <img src={brand.logo} alt="coco" />
+                                <div>
+                                    <img src={brand.logo} alt="coco" />
+                                </div>
+                                <div>
+                                    <label>Name</label>
+                                    <input name="name" type="text" placeholder={brand.brand_name} autoFocus />
+                                </div>
+                                <div>
+                                    <label>Country of Origin</label>
+                                    <input name="country" type="text" placeholder={brand.country} />
+                                </div>
+                                <div id='button'>
+                                    <input type="submit" value="Change" />
+                                </div>
+                            </form>
                         </div>
-                        <div>
-                            <label>Name</label>
-                            <input name="name" type="text" placeholder={brand.brand_name} autoFocus />
+                    ) :
+                        <div className='forms'>
+                            <form className='formlogin'>
+                                <div>
+                                    <h1>Te ah ekivocao manito</h1>
+                                </div>
+
+                                <div>
+                                    <img src={coco} alt="coco" />
+                                </div>
+                                <div>
+                                    <label>Name</label>
+                                    <input name="name" type="text" placeholder="Ehta basio" autoFocus />
+                                </div>
+                                <div>
+                                    <label>Country of Origin</label>
+                                    <input name="country" type="text" placeholder="Ehto tanvien" />
+                                </div>
+                                <div id='buttons'>
+                                    <input value="No baia a pulsa" />
+                                </div>
+                            </form>
                         </div>
-                        <div>
-                            <label>Country of Origin</label>
-                            <input name="country" type="text" placeholder={brand.country} />
-                        </div>
-                        <div id='button'>
-                            <input type="submit" value="Change" />
-                        </div>
-                    </form>
-                </div>
+                    }
+                </>
             ) :
-                <div className='forms'>
-                    <form className='formlogin'>
-                        <div>
-                            <h1>Te ah ekivocao manito</h1>
-                        </div>
-
-                        <div>
-                            <img src={coco} alt="coco" />
-                        </div>
-                        <div>
-                            <label>Name</label>
-                            <input name="name" type="text" placeholder="Ehta basio" autoFocus />
-                        </div>
-                        <div>
-                            <label>Country of Origin</label>
-                            <input name="country" type="text" placeholder="Ehto tanvien" />
-                        </div>
-                        {/* <div>
-                        <label>Logo</label>
-                        <input name="logo" type="file" accept='image/png, image/jpeg' />
-                    </div> */}
-                        <div id='buttons'>
-                            <input value="No baia a pulsa" />
-                        </div>
-                    </form>
-                </div>
+                window.location.replace('/login')
             }
         </>
+
     );
 };

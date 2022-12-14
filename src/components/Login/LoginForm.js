@@ -14,6 +14,8 @@ const LoginForm = () => {
         UserDataService.login(params)
         .then(response => {
             window.localStorage.setItem('token', response.data.token)
+            window.localStorage.setItem('role', response.data.user.role)
+            window.localStorage.setItem('user', response.data.user.id)
             window.location = "/brands"
         })
         .catch(e => {

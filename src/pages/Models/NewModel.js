@@ -3,11 +3,21 @@ import ModelForm from '../../components/Create/Modelform';
 import Off from '../../components/OffCanvas/Off';
 
 export default function NewModel() {
+
+    const logged = localStorage.getItem('role');
+
     return (
+
         <>
-            <CHeader className='headerxd'></CHeader>
-            <Off></Off>
-            <ModelForm/>
+            {logged ? (
+                <>
+                    <CHeader className='headerxd'></CHeader>
+                    <Off></Off>
+                    <ModelForm />
+                </>
+            ) :
+                window.location.replace('/login')
+            }
         </>
 
     );

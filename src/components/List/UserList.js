@@ -5,26 +5,8 @@ import fotaca from '../../assets/images/fotaca.jpeg';
 
 const UserList = () => {
 
-    const id = localStorage.getItem('user')
-    const [user, setUser] = useState([]);
-
-    useEffect(() => {
-        retrieveUser();
-    }, []);
-
-    const retrieveUser = () => {
-        UserDataService.get()
-            .then((response) => {
-                setUser(response.data)
-                console.log(response.data)
-            }).catch(() => {console.log('tu madre')})
-    }
-
-    
-
-    // const change = (event) => {
-
-    // }
+    const username = localStorage.getItem('username')
+    const age = localStorage.getItem('age')
 
     return (
         <div className='forms'>
@@ -35,11 +17,11 @@ const UserList = () => {
                 </div>
                 <div>
                     <label>Username</label>
-                    <input name="username" type="text" placeholder={user.username} autoFocus />
+                    <input name="username" type="text" placeholder={username} autoFocus />
                 </div>
                 <div>
                     <label>Age</label>
-                    <input name="Age" type="number" min="18" max="120" placeholder={user.age} />
+                    <input name="Age" type="number" min="18" max="120" placeholder={age} />
                 </div>
                 <div id='buttons'>
                     <input type="submit" value="Change" />

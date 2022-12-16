@@ -22,7 +22,7 @@ const Off = () => {
                 </COffcanvasHeader>
                 <COffcanvasBody className='offinternal' id='offbody'>
                     {localStorage.getItem('role') ? (
-                        <Link to='/login'>
+                        <Link to='/user'>
                             <CContainer> <img src={fotaca} id='fotaca' /> </CContainer>
                         </Link>
                     ) :

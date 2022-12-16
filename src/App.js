@@ -18,6 +18,8 @@ export default function App() {
 
   // localStorage.clear("token")
   // localStorage.clear("role")
+  // localStorage.clear("username")
+  // localStorage.clear("age")
 
   return (
     <BrowserRouter>

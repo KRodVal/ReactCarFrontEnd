@@ -130,18 +130,20 @@ There's no need to further explain what it does.
 
 ### Login
 
-![Login](./Screenshots/LoginScreen.png)
+![Login](Screenshots/LogInScreen.png)
 
 ### Brands
 
-
+![Brands](Screenshots/BrandsScreen.png)
 
 ### Models
 
-
+![Models](Screenshots/ModelsScreen.png)
 
 ### Edit
 
-
+![Edit](Screenshots/EditScreen.png)
 
 ### New 
+
+![New](Screenshots/CreateScreen.png)

@@ -1,0 +1,52 @@
+.forms h1 {
+    font-size:xx-large;
+    color: #175676;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.formlogin {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formlogin div {
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formlogin div label {
+    margin: .5em;
+    font-size: x-large;
+    color: #175676;
+    font-weight: 500;
+
+}
+
+.formlogin div input {
+    background-color: transparent;
+    height: 2em;
+    border-radius: .5em;
+    border-color: #175676;
+    text-align: center;
+    color: #175676;
+}
+
+#buttons {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+#buttons input {
+    margin-left: .5em;
+    margin-right: .5em;
+    width: 8em;
+    background-color: transparent;
+    border-radius: .5em;
+    border-color: #175676;
+}

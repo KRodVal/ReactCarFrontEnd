@@ -1,0 +1,44 @@
+.logo {
+    align-items: center;
+}
+
+.logo img {
+    width: 4em;
+}
+
+#refresh {
+    float: right;
+    width: 5em;
+    height: auto;
+}
+
+#trash {
+    float: right;
+    width: 2em;
+    height: auto;
+}
+
+.brands {
+    color: #175676;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2em;
+}
+
+.models {
+    color: #4BA3C3;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.CardContainer {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.CardContainer:hover {
+    border: solid #175676;
+    border-radius: 1em;
+}

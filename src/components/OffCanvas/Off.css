@@ -1,0 +1,51 @@
+#Hamb {
+    margin-top: 2em;
+    margin-left: 2em;
+    height: 3em;
+    width: auto;
+}
+
+.offinternal {
+    background-color: #175676;
+}
+
+#fotaca {
+    width: 6em;
+    height: auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #CCE6F4;   
+    position:absolute;
+    right: 10%; 
+}
+
+#offbody {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textButtons {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.offtext {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.offtext a {
+    color: #CCE6F4;
+    font-size: 350%;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.offtext a:hover {
+    text-decoration: underline #CCE6F4;
+}

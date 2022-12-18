@@ -1,0 +1,27 @@
+.logo {
+    align-items: center;
+}
+
+.logo img {
+    width: 4em;
+}
+
+.models {
+    color: #175676;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2em;
+}
+
+.brands {
+    color: #4BA3C3;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.CardContainer {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

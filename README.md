@@ -178,6 +178,25 @@ In my case, I decided to start with a web project, the main differences between 
 For my project, a Web App was the way to go, because making a native app implied that I needed to create separate apps for every OS, and a web app covered the main purpose of the project, providing an online page for car brands listing. 
 
 
+## Usability
+
+- In my project, I took a simple approach, to make a clean page that doesn't overload the user with information.
+
+- Some details to take into account is the color palette used, I decided to use a color list that reminded a garage, with a combination of different tones of blue, and some red to remark the delete icons.
+
+
+[palette](Screenshots/Palette.png)
+
+- Also, in order to facilitate the ease of use for the user, I prepared the forms to display in the absolute center of the page, facilitating the use of the web in mobile versions.
+
+- Apart from that, the offcanvas slides from the side, optimizing the space used and making the offcanvas appear and disappear when used.
+
+- When using rounded and clean lines, we create a relaxed page that doesn't give the user any headache.
+
+- When hovering over an item like a card or a route on the offcanvas, the app underlines the actual card or text to show the user the actual selection.
+
+- By ordering the data on the brands and models card, we obtain an easy to understand list of data.
+
 ## API Reference
 
 #### Brands
@@ -235,11 +254,6 @@ For my project, a Web App was the way to go, because making a native app implied
 ### UML
 
 ![UML](Screenshots/UML.png)
-## Author
-
-- [@KRodVal](https://www.github.com/KRodVal)
-
-
 
 ## Screenshots
 
@@ -267,4 +281,11 @@ For my project, a Web App was the way to go, because making a native app implied
 #### Rails' API repository
 
 [Rails Backend API](https://github.com/KRodVal/CarListApi)
+
+#### Figma
+
+[Figma design](https://www.figma.com/file/wr86lIUpl2QLAS792IQKu7/Proyecto-2710?node-id=2%3A9&t=Yh0ljJOImVyrpx0a-1)
+## Author
+
+- [@KRodVal](https://www.github.com/KRodVal)
 

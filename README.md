@@ -179,7 +179,7 @@ There's no need to further explain what it does.
 
 ### Login
 
-![Login](Screenshots/LoginScreen.png)
+![Login](Screenshots/LogInScreen.png)
 
 ### Brands
 
@@ -195,7 +195,7 @@ There's no need to further explain what it does.
 
 ### New 
 
-![New](Screenshots/NewScreen.png)
+![New](Screenshots/CreateScreen.png)
 
 
 

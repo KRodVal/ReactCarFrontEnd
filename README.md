@@ -168,7 +168,19 @@ There's no need to further explain what it does.
 | `id`      | `string` | **Required**. Id of model to fetch |
 | `Token`   | `string` | **Required**. Your Token          |
 
+## Diagrams
 
+### E-R
+
+![E-R](Screenshots/E-R.png)
+
+### Relational
+
+![Relational](Screenshots/Relational.png)
+
+### UML
+
+![UML](Screenshots/UML.png)
 ## Author
 
 - [@KRodVal](https://www.github.com/KRodVal)
@@ -179,7 +191,7 @@ There's no need to further explain what it does.
 
 ### Login
 
-![Login](Screenshots/LogInScreen.png)
+![Login](Screenshots/LoginScreen.png)
 
 ### Brands
 
@@ -195,10 +207,7 @@ There's no need to further explain what it does.
 
 ### New 
 
-![New](Screenshots/CreateScreen.png)
-
-
-
+![New](Screenshots/NewScreen.png)
 ## Related
 
 #### Rails' API repository

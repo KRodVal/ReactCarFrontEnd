@@ -123,7 +123,41 @@ In case you find a new entry that doesn't match with any existing brand, there's
 
 There's no need to further explain what it does.
 
-## 
+## Comparison
+
+Why React? Why not Angular? Here, we'll take a look at all the differences that make React and Angular unique in its own ways.
+
+And remember, both are amazing options when it comes to making an stunning frontend, but when it comes to an specific project, one of them might take the lead due to having a more compensated benefit-to-defect ratio on one exact use.
+
+### React
+
+#### The good
+
+- React is a JS library focused on the UI development, with a flexible and component-based structure that allows every developer with JavaScript knowledge to understand every inch of code that React provides.
+
+#### The not so good
+
+- The only counterpart that you may encounter is related to it's lack of internal UI components and dependency injection, as it's not a framework "per se".
+
+
+### Angular
+
+#### Good
+
+- Angular, a framework managed by Google, a quite complete solution when it comes to front-end design. with a built-in toolset that allows the developer to work out the entire project with close to no external components.
+
+#### Not so good
+
+- But, as good as it may sound, it's not that easy to achieve. And that's the main issue, because of it's complexity and TypeScrips based functionality, if offers great potential at the cost of a steeper learning curve.
+
+### Why React?
+
+When getting into this project, React presented itself as a balanced option, by offering simplicity and many other advantages while not compromising any important aspect of the project.
+
+With this section I want to recapitulate, I'm not saying Angular isn't a good option, it just happened that React was the go-to in my case.
+
+Perhaps if the project was focused in a different direction, the decision might have been different.
+
 ## API Reference
 
 #### Brands

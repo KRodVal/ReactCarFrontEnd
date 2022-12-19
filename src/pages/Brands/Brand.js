@@ -11,7 +11,6 @@ export default function OneBrand() {
     const logged = localStorage.getItem('role');
     let { id } = useParams();
     const [brand, setBrand] = useState({});
-    console.log(brand)
 
     useEffect(() => {
         BrandDataService.get(id)

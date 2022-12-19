@@ -185,7 +185,7 @@ For my project, a Web App was the way to go, because making a native app implied
 - Some details to take into account is the color palette used, I decided to use a color list that reminded a garage, with a combination of different tones of blue, and some red to remark the delete icons.
 
 
-[palette](Screenshots/Palette.png)
+![palette](Screenshots/Palette.png)
 
 - Also, in order to facilitate the ease of use for the user, I prepared the forms to display in the absolute center of the page, facilitating the use of the web in mobile versions.
 

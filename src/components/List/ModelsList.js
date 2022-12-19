@@ -14,7 +14,6 @@ const ModelsList = () => {
         ModelDataService.getAll()
             .then(response => {
                 setModels(response.data);
-                console.log(response.data);
             })
             .catch(e => {
                 console.log(e);

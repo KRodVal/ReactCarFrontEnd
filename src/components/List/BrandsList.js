@@ -17,7 +17,6 @@ const BrandsList = () => {
         BrandDataService.getAll()
             .then(response => {
                 setBrands(response.data);
-                console.log(response)
             })
             .catch(e => {
                 console.log(e);
@@ -45,7 +44,7 @@ const BrandsList = () => {
                                 </CCol>
                                 <CCol xs={3} className="models">{brand.country}</CCol>
 
-                                <CCol xs={2} className="delete" onClick={() => BrandDataService.remove(brand.id)}>
+                                <CCol xs={2} className="delete" onClick={() => BrandDataService.remove(brand.id).then(() => {window.location = "/brands"})}>
                                     <Link to="/brands" >
                                         <img id="trash" src={trash} alt="delete" />
                                     </Link>

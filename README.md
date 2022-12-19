@@ -79,6 +79,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 #### `npm run build` fails to minify
 
+
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## After running the app
@@ -120,6 +122,53 @@ The process is simple, we just need to fill the form with our username, password
 In case you find a new entry that doesn't match with any existing brand, there's a red button just at the right side of the card.
 
 There's no need to further explain what it does.
+
+## 
+## API Reference
+
+#### Brands
+
+```http
+ GET  /brands
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Token`   | `string` | **Required**. Your Token   |
+
+#### Brand
+
+```http
+  GET /brands/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of brand to fetch |
+| `Token`   | `string` | **Required**. Your Token          |
+
+#### Brands
+
+```http
+ GET  /models
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Token`   | `string` | **Required**. Your Token   |
+
+#### Brand
+
+```http
+  GET /models/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of model to fetch |
+| `Token`   | `string` | **Required**. Your Token          |
+
+
 ## Author
 
 - [@KRodVal](https://www.github.com/KRodVal)
@@ -147,3 +196,12 @@ There's no need to further explain what it does.
 ### New 
 
 ![New](Screenshots/CreateScreen.png)
+
+
+
+## Related
+
+#### Rails' API repository
+
+[Rails Backend API](https://github.com/KRodVal/CarListApi)
+

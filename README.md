@@ -197,6 +197,32 @@ For my project, a Web App was the way to go, because making a native app implied
 
 - By ordering the data on the brands and models card, we obtain an easy to understand list of data.
 
+
+## User Requirements
+
+Must be a web app, based on the mobile-first approach.
+
+The app must have a main page, in which it will display the brands.
+
+
+
+ ### Pages
+
+ - Must have mandatory Log In page
+ - After loging in, will show the main page (a list of brands)
+ - Must have a sidebar as a routing method
+ - User can change between brands and models on the sidebar
+
+ ### Edit
+
+ - User can click on a brand to change the information about it
+ - User can edit his user data, like name or age
+
+### Create
+
+- When creating a brand, user must give a logo
+- Sign Up must request an age higher than 18
+
 ## API Reference
 
 #### Brands
@@ -289,3 +315,11 @@ For my project, a Web App was the way to go, because making a native app implied
 
 - [@KRodVal](https://www.github.com/KRodVal)
 
+
+## Conclussion
+
+- With this experience, I made a quite good first contact with Ruby on Rails and experienced a severe lack of time and energy.
+
+- But thanks to that experience, I learned to manage in a greater manner my time and how to spend it.
+
+- Ruby on Rails found a place in my heart, I would completely recommend an application using RoR. 

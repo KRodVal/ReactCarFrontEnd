@@ -205,3 +205,5 @@ There's no need to further explain what it does.
 
 [Rails Backend API](https://github.com/KRodVal/CarListApi)
 
+[Figma design](https://www.figma.com/file/wr86lIUpl2QLAS792IQKu7/Proyecto-2710?node-id=2%3A9&t=Yh0ljJOImVyrpx0a-1)
+
